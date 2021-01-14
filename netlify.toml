@@ -4,4 +4,4 @@
 [context.production]
   command = "yarn build"
   [context.production.environment]
-    WEATHER_API_KEY = "832138963ce340db8c4941827446f336"
+    GATSBY_WEATHER_API_KEY = "832138963ce340db8c4941827446f336"

@@ -7,7 +7,7 @@ const WeatherWidget = props => {
   const [weatherResponse, setWeatherResponse] = useState(null)
 
   useEffect(() => {
-    axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${process.env.WEATHER_API_KEY}`)
+    axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${process.env.GATSBY_WEATHER_API_KEY}`)
     .then(response => console.log(response))
     .catch(function (error) {
       // handle error
