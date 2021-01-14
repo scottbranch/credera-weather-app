@@ -1,0 +1,7 @@
+# Production context:
+# All deploys from the main repository branch
+# will inherit these settings.
+[context.production]
+  command = "yarn build"
+  [context.production.environment]
+    WEATHER_API_KEY = "832138963ce340db8c4941827446f336"
