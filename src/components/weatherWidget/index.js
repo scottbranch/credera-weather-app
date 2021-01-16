@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 import styled from "styled-components"
 
+import LocationTitle from "./locationTitle"
 import CurrentWeatherBlock from "./currentWeatherBlock"
 import DailyWeatherBlock from "./dailyWeatherBlock"
 
@@ -41,6 +42,7 @@ const WeatherWidget = props => {
 
   return (
     <>
+      <LocationTitle />
       <CurrentWeatherBlock
         temp={weatherResponse?.current?.temp}
         iconClass={`wi wi-${
@@ -58,7 +60,7 @@ const WeatherWidget = props => {
             <DailyWeatherBlock
               iconClass={`wi wi-${weatherIcons[iconId]?.icon}`}
               key={index}
-              temp={item.temp.max}
+              temp={Math.round(item.temp.max)}
               description={item.weather[0].description}
             />
           )
