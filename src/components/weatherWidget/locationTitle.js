@@ -5,6 +5,8 @@ import styled from "styled-components"
 const LocationTitle = props => {
   const [today, setToday] = useState("")
 
+  const { city } = props
+
   useEffect(() => {
     let dateOptions = {
       weekday: "long",
@@ -22,7 +24,7 @@ const LocationTitle = props => {
     <TitleContainer>
       <CityParagraph>
         <StyledLocationPin />
-        Dallas, TX
+        {city}
       </CityParagraph>
       <DateParagraph>{today}</DateParagraph>
     </TitleContainer>

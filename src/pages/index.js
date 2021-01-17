@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "./../css/weatherIcons.css"
 
 import WeatherWidget from "../components/weatherWidget"
 
@@ -22,6 +23,8 @@ const HomepageContainer = styled.div`
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
   width: 100%;
 `
 

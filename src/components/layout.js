@@ -8,23 +8,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { ThemeProvider } from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
 
 import theme from "../theme"
-import "./layout.css"
-import "./weatherWidget/weatherIcons.css"
+import "./../css/layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <ThemeProvider theme={theme}>
       <main>{children}</main>
