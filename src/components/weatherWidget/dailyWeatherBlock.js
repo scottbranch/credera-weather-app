@@ -10,7 +10,7 @@ const DailyWeatherBlock = props => {
       <WeatherIcon className={iconClass}></WeatherIcon>
       <Temperature>
         {temp}
-        <sup>&deg;</sup>
+        <Sup>&deg;</Sup>
       </Temperature>
     </StyledContainer>
   )
@@ -43,6 +43,10 @@ const WeatherIcon = styled.i`
 const Temperature = styled.p`
   color: ${({ theme }) => theme.colors.darkGray};
   font-size: 1.35rem;
+`
+
+const Sup = styled.sup`
+  top: -3px;
 `
 
 export default DailyWeatherBlock
