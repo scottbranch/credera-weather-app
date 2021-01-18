@@ -134,20 +134,30 @@ const CloudContainer = styled.div`
   overflow: hidden;
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 54%;
   left: 0;
   transform: translateY(-50%);
   z-index: 150;
+
+  @media screen and (min-width: ${({ theme }) =>
+      theme.breakPoints.extraSmall}) {
+    top: 50%;
+  }
 `
 
 const Cloud1 = styled.img`
   animation: ${floatcloud("210px", "0")} 40s linear infinite;
   animation-delay: -25s;
   left: 0;
-  max-width: 210px;
+  max-width: 170px;
   position: absolute;
   transform: translate3d(-100%, 0, 0);
   z-index: 150;
+
+  @media screen and (min-width: ${({ theme }) =>
+      theme.breakPoints.extraSmall}) {
+    max-width: 210px;
+  }
 `
 
 const Cloud2 = styled.img`
