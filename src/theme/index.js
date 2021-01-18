@@ -8,6 +8,9 @@ const theme = {
     lightBlue: "#4ECFED",
     white: "#FFFFFF",
   },
+  breakPoints: {
+    small: "480px",
+  },
 }
 
 export default theme

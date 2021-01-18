@@ -17,7 +17,7 @@ const IndexPage = () => (
 )
 
 const HomepageContainer = styled.div`
-  align-items: center;
+  align-items: baseline;
   background: ${({ theme }) =>
     `linear-gradient(45deg, ${theme.colors.darkBlue}, ${theme.colors.lightBlue})`};
   display: flex;
@@ -26,6 +26,10 @@ const HomepageContainer = styled.div`
   overflow: hidden;
   position: relative;
   width: 100%;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakPoints.small}) {
+    align-items: center;
+  }
 `
 
 export default IndexPage

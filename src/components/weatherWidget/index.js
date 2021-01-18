@@ -32,6 +32,7 @@ const WeatherWidget = props => {
       .then(response => {
         setWeatherResponse(response.data)
         setIsLoading(false)
+        console.log(response.data)
       })
       .catch(function (error) {
         console.log(error)
@@ -99,7 +100,7 @@ const WeatherWidget = props => {
             return (
               <DailyWeatherBlock
                 day={currentWeekday}
-                iconClass={`wi wi-${weatherIcons[iconId]?.icon}`}
+                iconClass={`wi wi-${weatherIcons[iconId].icon}`}
                 key={currentWeekday}
                 temp={Math.round(item.temp.max)}
               />
@@ -122,8 +123,8 @@ const floatcloud = (elementWidth, topValue) => keyframes`
 `
 
 const WidgetContainer = styled.div`
-  max-width: 670px;
-  padding: 25px 0 40px;
+  max-width: 690px;
+  padding: 25px 20px 40px;
   width: 100%;
 `
 
