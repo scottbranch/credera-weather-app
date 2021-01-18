@@ -115,7 +115,7 @@ const WeatherWidget = props => {
 
 const floatcloud = (elementWidth, topValue) => keyframes`
   0% {
-    transform: translate3d(calc(0vw - ${elementWidth}), ${topValue}, 0);
+    transform: translate3d(calc(0vw -${elementWidth}), ${topValue}, 0);
   }
 
   100% {
