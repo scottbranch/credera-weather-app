@@ -19,6 +19,23 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper,
+main {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+}
+
+div[role="group"][tabindex] {
+  height: 100%;
+}
+
 article,
 aside,
 details,

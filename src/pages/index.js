@@ -22,7 +22,7 @@ const HomepageContainer = styled.div`
     `linear-gradient(45deg, ${theme.colors.darkBlue}, ${theme.colors.lightBlue})`};
   display: flex;
   justify-content: center;
-  height: ${typeof window !== "undefined" && `${window.innerHeight}px`};
+  height: 100%;
   position: relative;
   width: 100%;
 
