@@ -9,7 +9,8 @@ const theme = {
     white: "#FFFFFF",
   },
   breakPoints: {
-    small: "480px",
+    extraSmall: "480px",
+    small: "768px",
   },
 }
 

@@ -22,13 +22,19 @@ const HomepageContainer = styled.div`
     `linear-gradient(45deg, ${theme.colors.darkBlue}, ${theme.colors.lightBlue})`};
   display: flex;
   justify-content: center;
-  min-height: 100vh;
-  overflow: hidden;
+  height: ${window !== undefined && `${window.innerHeight}px`};
   position: relative;
   width: 100%;
 
   @media screen and (min-width: ${({ theme }) => theme.breakPoints.small}) {
+    height: 100vh;
+    min-height: 655px;
+  }
+
+  @media screen and (min-width: ${({ theme }) =>
+      theme.breakPoints.extraSmall}) and (min-height: 645px) {
     align-items: center;
+    height: 100vh;
   }
 `
 

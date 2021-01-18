@@ -62,8 +62,10 @@ const WeatherWidget = props => {
 
   return (
     <WidgetContainer>
-      <Cloud1 src={cloud1} />
-      <Cloud2 src={cloud2} />
+      <CloudContainer>
+        <Cloud1 src={cloud1} />
+        <Cloud2 src={cloud2} />
+      </CloudContainer>
 
       <LocationTitle city={city} />
 
@@ -94,7 +96,7 @@ const WeatherWidget = props => {
 
         <WeatherBlockContainer>
           {weatherResponse?.daily?.slice(1, 6).map((item, index) => {
-            let iconId = item.weather[0].id
+            let iconId = item.weather[0]?.id
             let currentWeekday = weekDays[(today.getDay() + 1 + index) % 7]
 
             return (
@@ -128,18 +130,29 @@ const WidgetContainer = styled.div`
   width: 100%;
 `
 
+const CloudContainer = styled.div`
+  height: 310px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 150;
+`
+
 const Cloud1 = styled.img`
-  animation: ${floatcloud("210px", "135px")} 40s linear infinite;
+  animation: ${floatcloud("210px", "0")} 40s linear infinite;
   animation-delay: -25s;
   left: 0;
   max-width: 210px;
   position: absolute;
-  transform: translate3d(-100%, 135px, 0);
+  transform: translate3d(-100%, 0, 0);
   z-index: 150;
 `
 
 const Cloud2 = styled.img`
-  animation: ${floatcloud("145px", "220px")} 45s linear infinite;
+  animation: ${floatcloud("145px", "135px")} 45s linear infinite;
   animation-delay: -10s;
   left: 0;
   max-width: 145px;
