@@ -130,7 +130,7 @@ const WidgetContainer = styled.div`
 `
 
 const CloudContainer = styled.div`
-  height: 310px;
+  height: 345px;
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -151,12 +151,12 @@ const Cloud1 = styled.img`
 `
 
 const Cloud2 = styled.img`
-  animation: ${floatcloud("145px", "135px")} 45s linear infinite;
+  animation: ${floatcloud("145px", "90px")} 45s linear infinite;
   animation-delay: -10s;
   left: 0;
   max-width: 145px;
   position: absolute;
-  transform: translate3d(-100%, 220px, 0);
+  transform: translate3d(-100%, 90px, 0);
   z-index: 150;
 `
 
