@@ -17,7 +17,7 @@ const IndexPage = () => (
 )
 
 const HomepageContainer = styled.div`
-  align-items: baseline;
+  align-items: center;
   background: ${({ theme }) =>
     `linear-gradient(45deg, ${theme.colors.darkBlue}, ${theme.colors.lightBlue})`};
   display: flex;
@@ -31,10 +31,8 @@ const HomepageContainer = styled.div`
     min-height: 655px;
   }
 
-  @media screen and (min-width: ${({ theme }) =>
-      theme.breakPoints.extraSmall}) and (min-height: 645px) {
-    align-items: center;
-    height: 100vh;
+  @media screen and (max-height: 645px) {
+    align-items: baseline;
   }
 `
 

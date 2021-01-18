@@ -32,7 +32,6 @@ const WeatherWidget = props => {
       .then(response => {
         setWeatherResponse(response.data)
         setIsLoading(false)
-        console.log(response.data)
       })
       .catch(function (error) {
         console.log(error)
@@ -204,7 +203,12 @@ const WeatherBlockContainer = styled.div`
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-between;
-  min-height: 156px;
+  min-height: 125px;
+
+  @media screen and (min-width: ${({ theme }) =>
+      theme.breakPoints.extraSmall}) {
+    min-height: 156px;
+  }
 `
 
 export default WeatherWidget
