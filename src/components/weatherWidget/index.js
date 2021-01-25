@@ -33,8 +33,8 @@ const WeatherWidget = props => {
         setWeatherResponse(response.data)
         setIsLoading(false)
       })
-      .catch(function (error) {
-        console.log(error)
+      .catch(error => {
+        alert(error)
       })
   }, [unit])
 
