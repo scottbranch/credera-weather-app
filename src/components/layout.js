@@ -8,7 +8,7 @@ import "./../css/layout.css"
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <main>{children}</main>
+      <main>{children}children stuff</main>
     </ThemeProvider>
   )
 }
