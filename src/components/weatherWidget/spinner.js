@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components"
 const Spinner = props => {
   const { size } = props
 
-  return <LoaderContainer size={size}>this is the og</LoaderContainer>
+  return <LoaderContainer size={size}>this is the og adding clone line</LoaderContainer>
 }
 
 const spinner = keyframes`
