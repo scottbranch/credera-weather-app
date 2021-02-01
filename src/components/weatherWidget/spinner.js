@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components"
 const Spinner = props => {
   const { size } = props
 
-  return <LoaderContainer size={size}></LoaderContainer>
+  return <LoaderContainer size={size}>asdf</LoaderContainer>
 }
 
 const spinner = keyframes`
