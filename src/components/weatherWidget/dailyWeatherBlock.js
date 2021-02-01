@@ -12,6 +12,7 @@ const DailyWeatherBlock = props => {
         {temp}temperature og
         <Sup>&deg;</Sup>
       </Temperature>
+      testing clone
     </StyledContainer>
   )
 }
