@@ -13,7 +13,7 @@ const spinner = keyframes`
   }
 
   100% {
-      transform: rotate(360deg);
+      transform: rotate(390deg);
   }
 `
 
