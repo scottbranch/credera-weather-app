@@ -13,7 +13,7 @@ const UnitToggle = props => {
     >
       <Toggle unit={unit}></Toggle>
       <UnitParagraph unit={unit} className="metric">
-        C<Sup>&deg;unit toggle og updated</Sup>
+        C<Sup>&deg;unit toggle og branched version</Sup>
       </UnitParagraph>
       <UnitParagraph unit={unit} className="imperial">
         F<Sup>&deg;</Sup>
