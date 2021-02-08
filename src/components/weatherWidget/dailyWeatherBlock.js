@@ -9,7 +9,7 @@ const DailyWeatherBlock = props => {
       <DayParagraph>{day}</DayParagraph>
       <WeatherIcon className={iconClass}></WeatherIcon>
       <Temperature>
-        {temp}temperature og
+        {temp}temperature og branched version
         <Sup>&deg;</Sup>
       </Temperature>
     </StyledContainer>
