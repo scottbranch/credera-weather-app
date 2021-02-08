@@ -34,7 +34,7 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          property: `og:title`,
+          property: `og:title branched version`,
           content: title,
         },
         {
