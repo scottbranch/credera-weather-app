@@ -30,7 +30,7 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
-          name: `description description og`,
+          name: `description description og updated`,
           content: metaDescription,
         },
         {
